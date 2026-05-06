@@ -1,0 +1,191 @@
+736-          animate={{ opacity: 1, scale: 1, y: 0 }}
+737-          exit={{ opacity: 0, scale: 0.95, y: 20 }}
+738:          className="bg-[var(--background)] rounded-2xl shadow-2xl border border-[var(--border)] w-full max-w-md overflow-hidden"
+739-          dir="rtl"
+740-          onClick={(e) => e.stopPropagation()}
+--
+811-export function PrivacyPolicy() {
+812-  return (
+813:    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] p-8 text-right" dir="rtl">
+814-      <div className="max-w-3xl mx-auto space-y-6">
+815-        <h1 className="text-3xl font-bold">מדיניות פרטיות עבור MugenTube</h1>
+--
+1054-                  <button 
+1055-                    onClick={() => setShowMoreShorts(prev => ({ ...prev, [currentShelfIndex]: !prev[currentShelfIndex] }))}
+1056:                    className="relative z-10 inline-flex w-full max-w-[360px] items-center justify-center gap-2 h-[42px] rounded-full border border-[var(--border)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-colors text-[var(--foreground)] text-[15px] font-medium"
+1057-                  >
+1058-                    <span>מידע נוסף</span>
+--
+2943-    <>
+2944-      <GlobalStyles />
+2945:      <div className={`h-screen bg-[var(--background)] flex flex-col overflow-hidden ${isSidebarOpen ? 'overflow-hidden' : ''}`} dir="rtl">
+2946-        {/* Loading Progress Bar */}
+2947-        <div 
+--
+2954-        />
+2955-      {!user ? (
+2956:        <div className="flex-1 relative overflow-hidden bg-[var(--background)]">
+2957:          <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-50 bg-[var(--background)] overflow-hidden">
+2958-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-20 pointer-events-none">
+2959-              <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-500/30 rounded-full blur-[120px] animate-pulse" />
+--
+3101-                    type="text"
+3102-                    placeholder="חיפוש"
+3103:                    className="w-full pl-12 pr-5 py-[0.85rem] border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] rounded-r-full focus:outline-none focus:border-blue-500 text-[1.4rem] md:text-[1.5rem] placeholder:text-[1.4rem] md:placeholder:text-[1.5rem]"
+3104-                    value={searchQuery}
+3105-                    onChange={(e) => {
+--
+3151-                      animate={{ opacity: 1, y: 0 }}
+3152-                      exit={{ opacity: 0, y: -10 }}
+3153:                      className="absolute top-full left-0 right-0 bg-[var(--background)] border border-[var(--border)] rounded-2xl shadow-xl z-[100] mt-2 overflow-hidden"
+3154-                    >
+3155-                      <ul className="py-2">
+--
+3230-                      animate={{ opacity: 1, y: 0, scale: 1 }}
+3231-                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
+3232:                      className="absolute left-0 mt-2 w-80 bg-[var(--background)] rounded-xl shadow-xl border border-[var(--border)] z-50 overflow-hidden"
+3233-                    >
+3234-                      <div className="p-4 border-b border-[var(--border)] flex justify-between items-center">
+--
+3274-                      animate={{ opacity: 1, y: 0, scale: 1 }}
+3275-                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
+3276:                      className="absolute left-0 mt-2 w-72 bg-[var(--background)] rounded-xl shadow-2xl border border-[var(--border)] z-50 overflow-hidden"
+3277-                    >
+3278-                      <div className="p-4 border-b border-[var(--border)] flex items-center gap-3">
+--
+3441-              animate={{ opacity: 1, y: 0, scale: 1 }}
+3442-              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+3443:              className="bg-[var(--background)] w-full max-w-2xl mx-4 rounded-3xl shadow-2xl overflow-hidden border border-[var(--border)] relative"
+3444-            >
+3445-              <button 
+--
+3517-              exit={{ x: '100%' }}
+3518-              transition={{ duration: 0.25, ease: 'easeOut' }}
+3519:              className="bg-[var(--background)] fixed top-0 right-0 h-full z-[102] w-[260px] border-l border-[var(--border)] overflow-y-auto px-2"
+3520-            >
+3521-              <div className="flex flex-col gap-0.5 p-3 w-full">
+--
+3621-        {/* Sidebar */}
+3622-        <aside 
+3623:          className={`bg-[var(--background)] flex-shrink-0 fixed right-0 top-[72px] h-[calc(100vh-72px)] z-[101] transition-all duration-300 ${selectedVideo && !activeShortsContext && isSidebarOpen ? 'invisible' : ''} ${isSidebarOpen && !(selectedVideo && !activeShortsContext) ? `w-[260px] border-l border-[var(--border)] overflow-y-auto px-2` : 'w-[72px] hidden sm:flex flex-col items-center pb-2 overflow-visible'}`}
+3624-        >
+3625-          {isSidebarOpen ? (
+--
+3755-                {subscribedChannels.length > 0 && (
+3756-                  <div className="absolute right-full top-0 hidden group-hover/mini:flex min-w-[300px] z-50 mr-2 before:content-[''] before:absolute before:right-[-12px] before:top-0 before:bottom-0 before:w-3">
+3757:                    <div className="bg-[var(--background)] border border-[var(--border)] rounded-xl shadow-2xl p-2 max-h-[75vh] overflow-y-auto w-full">
+3758-                      <div className="text-[18px] font-bold text-[var(--foreground)] px-3 py-3 border-b border-[var(--border)] mb-2">מינויים</div>
+3759-                      {subscribedChannels.slice(0, 7).map(channel => (
+--
+3801-                {/* Hover Menu */}
+3802-                <div className="absolute right-full top-0 hidden group-hover/mini:flex min-w-[300px] z-50 mr-2 before:content-[''] before:absolute before:right-[-12px] before:top-0 before:bottom-0 before:w-3">
+3803:                  <div className="bg-[var(--background)] border border-[var(--border)] rounded-xl shadow-2xl p-2 w-full">
+3804-                    <div className="flex items-center justify-between px-3 py-3 border-b border-[var(--border)] mb-2 cursor-pointer hover:bg-[var(--secondary)] rounded-t-lg transition-colors" onClick={() => loadHistoryView()}>
+3805-                      <span className="text-[18px] font-bold text-[var(--foreground)]">אתה</span>
+--
+3831-
+3832-        {/* Main Content */}
+3833:        <div className="flex-1 relative overflow-hidden bg-[var(--background)]">
+3834-          {/* WatchView */}
+3835-          <main 
+3836-            id="watch-view-main"
+3837-            dir="ltr"
+3838:            className={`absolute inset-0 overflow-x-hidden bg-[var(--background)] transition-opacity duration-300 pt-0 ${selectedVideo && (selectedVideo.isShort || parseDurationSecs(selectedVideo.snippet?.duration) <= 63 && selectedVideo.snippet?.duration !== 'LIVE') ? 'overflow-hidden' : 'overflow-y-auto'}`} 
+3839-            style={{ 
+3840-              opacity: selectedVideo ? 1 : 0, 
+--
+3857-                return (
+3858-                  <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 text-center" dir="rtl">
+3859:                    <div className="max-w-md w-full bg-[var(--background)] rounded-2xl border border-amber-300 dark:border-amber-700 shadow-2xl overflow-hidden">
+3860-                      <div className="bg-amber-50 dark:bg-amber-900/30 px-6 py-8 flex flex-col items-center gap-4">
+3861-                        <div className="w-16 h-16 rounded-full bg-amber-100 dark:bg-amber-800/50 flex items-center justify-center">
+--
+3982-            id="channel-view-main"
+3983-            dir="ltr"
+3984:            className="absolute inset-0 overflow-y-auto bg-[var(--background)] transition-opacity duration-300 pt-0" 
+3985-            style={{ 
+3986-              opacity: !selectedVideo && selectedChannel ? 1 : 0, 
+--
+4146-                          <div className="fixed inset-0 bg-black/60 z-[9999] flex items-start justify-center p-4 pt-[54px]">
+4147-                            <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.97 }}
+4148:                              className="bg-[var(--background)] text-[var(--foreground)] rounded-lg shadow-2xl border border-[var(--border)] w-full max-w-[902px] max-h-[647px] overflow-y-auto" dir="rtl"
+4149-                            >
+4150-                              <div className="flex items-center justify-between px-6 pt-4 pb-3 border-b border-[var(--border)]">
+--
+4530-                                          </div>
+4531-                                          <div className="relative group/sc">
+4532:                                            <button onClick={() => { const c = document.getElementById(`hs-${gi}`); if (c) c.scrollBy({ left: 600, behavior: 'smooth' }); }} className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--background)] border border-[var(--border)] shadow-md hover:bg-[var(--secondary)] text-[var(--foreground)] p-2 rounded-full opacity-0 group-hover/sc:opacity-100 transition-opacity translate-x-1/2">
+4533-                                              <ChevronRight size={20} />
+4534-                                            </button>
+--
+4544-                                              })}
+4545-                                            </div>
+4546:                                            <button onClick={() => { const c = document.getElementById(`hs-${gi}`); if (c) c.scrollBy({ left: -600, behavior: 'smooth' }); }} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--background)] border border-[var(--border)] shadow-md hover:bg-[var(--secondary)] text-[var(--foreground)] p-2 rounded-full opacity-0 group-hover/sc:opacity-100 transition-opacity -translate-x-1/2">
+4547-                                              <ChevronLeft size={20} />
+4548-                                            </button>
+--
+5048-  return (
+5049-    <div className="fixed inset-0 bg-black/50 z-[9999] flex items-center justify-center p-4">
+5050:      <div className="bg-[var(--background)] rounded-xl w-full max-w-sm overflow-hidden shadow-2xl border border-[var(--border)]" dir="rtl">
+5051-        <div className="flex items-center justify-between p-4">
+5052-          <h2 className="text-lg font-bold text-[var(--foreground)]">עריכת פלייליסט</h2>
+--
+5972-    return (
+5973-      <div 
+5974:        className="flex flex-col bg-[var(--background)] w-full items-center justify-center overflow-hidden relative"
+5975-        style={{ height: 'calc(100vh - 6rem)' }}
+5976-        onWheel={handleWheel}
+--
+6169-
+6170-  return (
+6171:    <div className="flex flex-col bg-[var(--background)] min-h-full pb-20 overflow-x-hidden relative">
+6172-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+6173-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+--
+6383-          <div className="w-full lg:w-[400px] flex-shrink-0 lg:sticky lg:top-[88px] lg:self-start lg:max-h-[calc(100vh-100px)] lg:overflow-y-auto no-scrollbar pt-6 lg:pt-0">
+6384-             {/* Tags */}
+6385:             <div className="flex items-center gap-3 overflow-x-auto no-scrollbar pb-3 mb-4 px-1 sticky top-0 bg-[var(--background)] z-10 pt-1">
+6386-               {[
+6387-                 { id: 'all', label: 'הכול' },
+--
+6476-  
+6477-  return (
+6478:    <div className="bg-[var(--background)] border border-[var(--border)] rounded-2xl p-4 sm:p-6 max-w-3xl mx-auto w-full mb-6 shadow-sm">
+6479-      <div className="flex items-center gap-3 mb-4">
+6480-        <img 
+--
+7212-
+7213-  return (
+7214:    <div className="flex flex-col bg-[var(--background)] min-h-full">
+7215-      <div className="w-full px-4 sm:px-6 pt-4">
+7216-        <div className="max-w-7xl mx-auto w-full">
+--
+7687-    <motion.div 
+7688-      whileHover={{ scale: 1.002 }}
+7689:      className={`relative flex flex-col sm:flex-row ${compact || extraCompact ? 'gap-3 sm:gap-4' : 'gap-6'} cursor-pointer group bg-[var(--background)] rounded-2xl transition-all p-2 hover:bg-[var(--secondary)] w-full`}
+7690-      dir="rtl"
+7691-      onClick={onClick}
+--
+8450-          {showMenu && (
+8451-            <div 
+8452:              className="absolute left-0 top-8 w-56 bg-[var(--background)] border border-[var(--border)] rounded-xl shadow-2xl z-50 py-1 overflow-hidden"
+8453-              dir="rtl"
+8454-              onClick={(e) => e.stopPropagation()}
+--
+8579-          exit={{ opacity: 0, scale: 0.95, y: 20 }}
+8580-          transition={{ duration: 0.18 }}
+8581:          className="bg-[var(--background)] rounded-2xl shadow-2xl border border-[var(--border)] w-full max-w-sm overflow-hidden"
+8582-          dir="rtl"
+8583-          onClick={(e) => e.stopPropagation()}
+--
+8641-                  onKeyDown={(e) => { if (e.key === 'Enter') handleCreate(); if (e.key === 'Escape') { setCreating(false); setNewName(''); }}}
+8642-                  placeholder="שם הפלייליסט"
+8643:                  className="flex-1 px-3 py-2 border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] rounded-lg text-sm focus:outline-none focus:border-blue-500"
+8644-                  maxLength={60}
+8645-                />
+--
+8742-          </button>
+8743-          {showMenu && (
+8744:            <div className="absolute top-8 left-0 w-40 bg-[var(--background)] border border-[var(--border)] rounded-xl shadow-xl z-50 py-1 overflow-hidden" dir="rtl">
+8745-              <button onClick={() => { onDelete(); setShowMenu(false); }} className="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-[var(--secondary)] text-sm text-[var(--foreground)] transition-colors">
+8746-                <div style={{ width: '24px', height: '24px', flexShrink: 0  }}>

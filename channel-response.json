@@ -1,0 +1,66 @@
+{
+  "artistBio": null,
+  "avatar": [
+    {
+      "height": 900,
+      "url": "https://yt3.googleusercontent.com/09Osj54NakgrGVZM7aXMVEwwI44VFwuAwRuaGIXIWau1PDiBU093k0rTh6iDvwJ3VvFFlveZlw=s900-c-k-c0x00ffffff-no-rj",
+      "width": 900
+    }
+  ],
+  "badges": [],
+  "banner": {
+    "desktop": [
+      {
+        "height": 175,
+        "url": "https://yt3.googleusercontent.com/E8VcZLA7ugVT6qFG9BGQerw6upKwyy5mSn2fzNxgUJCjtIwIG30gkSCG86gwRlmo8K3P-yqe-w=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 1060
+      },
+      {
+        "height": 188,
+        "url": "https://yt3.googleusercontent.com/E8VcZLA7ugVT6qFG9BGQerw6upKwyy5mSn2fzNxgUJCjtIwIG30gkSCG86gwRlmo8K3P-yqe-w=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 1138
+      },
+      {
+        "height": 283,
+        "url": "https://yt3.googleusercontent.com/E8VcZLA7ugVT6qFG9BGQerw6upKwyy5mSn2fzNxgUJCjtIwIG30gkSCG86gwRlmo8K3P-yqe-w=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 1707
+      },
+      {
+        "height": 351,
+        "url": "https://yt3.googleusercontent.com/E8VcZLA7ugVT6qFG9BGQerw6upKwyy5mSn2fzNxgUJCjtIwIG30gkSCG86gwRlmo8K3P-yqe-w=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 2120
+      },
+      {
+        "height": 377,
+        "url": "https://yt3.googleusercontent.com/E8VcZLA7ugVT6qFG9BGQerw6upKwyy5mSn2fzNxgUJCjtIwIG30gkSCG86gwRlmo8K3P-yqe-w=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 2276
+      },
+      {
+        "height": 424,
+        "url": "https://yt3.googleusercontent.com/E8VcZLA7ugVT6qFG9BGQerw6upKwyy5mSn2fzNxgUJCjtIwIG30gkSCG86gwRlmo8K3P-yqe-w=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 2560
+      }
+    ],
+    "mobile": [],
+    "tv": []
+  },
+  "canonicalBaseUrl": null,
+  "channelId": "UC2G7zKbsBNpoVYbwb-NS56w",
+  "country": "ישראל",
+  "description": "ערוץ שיעורי התורה של גאון ישראל רבי שלמה יהודה בארי שליט\"א\nליצירת קשר ניתן לפנות למוקד הטלפוני של יד להועיל 033765444\n",
+  "hasBusinessEmail": false,
+  "isFamilySafe": true,
+  "isVerified": false,
+  "isVerifiedArtist": false,
+  "joinedDateText": "הצטרף/ה ב-7 בספט׳ 2019",
+  "keywords": [],
+  "links": [],
+  "stats": {
+    "subscribersText": null,
+    "videos": 726,
+    "videosText": null,
+    "views": 26768676
+  },
+  "title": "שיעורי הינוקא - The Yanuka Rav Shlomo Yehuda",
+  "username": "@TheYanukaRavShlomoYehuda"
+}
