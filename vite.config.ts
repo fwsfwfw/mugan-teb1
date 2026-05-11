@@ -6,8 +6,8 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    // השורה שהוספנו כדי שהקישורים יעבדו ב-GitHub Pages
-    base: '/mugan-teb1/', 
+    // שינינו ל-'/' כדי שהנתיבים יעבדו ב-Netlify ולא יחפשו תיקיית משנה
+    base: '/', 
     
     plugins: [react(), tailwindcss()],
     define: {
